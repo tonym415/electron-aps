@@ -1,0 +1,31 @@
+{
+    "name": "Thunda_Projects",
+    "version": "1.0.0",
+    "description": "A wrapper for personal projects",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+        "package-win": "electron-packager . Thunda_Projects --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Gui Apps\"",
+        "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+    },
+    "repository": "https://github.com/electron/electron-quick-start",
+    "keywords": [
+        "Personal",
+        "projects",
+        "with",
+        "Electron",
+        "front-end"
+    ],
+    "author": "Stolen Thunda",
+    "license": "1.0",
+    "devDependencies": {
+        "electron": "^3.0.4",
+        "electron-packager": "^12.2.0"
+    },
+    "dependencies": {
+        "mongodb": "^3.1.9",
+        "mongojs": "^2.6.0",
+        "mongojs-models": "^0.1.4"
+    }
+}
